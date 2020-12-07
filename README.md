@@ -7,9 +7,15 @@
 
 ## 使い方
 
+### goのエコーサーバーでテストする
 - cd 01-echoserver; go run main.go
 - cd 02-reverseproxy; go run main.go
 - wscat -c ws://localhost:8080/echo -o localhost:8080
+
+### Socket.ioのチャットサーバーでテストする
+- cd 03-socket.io; node index.js
+- cd 02-reverseproxy; go run main.go
+- ブラウザからlocalhost:12345を開いてテスト
 
 ## 参考
 
@@ -21,3 +27,6 @@
   - https://qiita.com/mackee_w/items/b6036d132888caaf5f98
 - websockets/wscat
   - https://github.com/websockets/wscat
+
+- Socket.IO
+  - https://socket.io/
